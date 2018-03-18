@@ -14,9 +14,4 @@ app.get('/',(req,res) => {
 	'OS':os.substr(1,os.length-2)
 	 }
 	res.send(result);
-});
-
-
-app.listen(PORT,() =>{
-	console.log('server is listening to %d port in %s mode', PORT,app.settings.env);
-});
+}).listen(PORT);
